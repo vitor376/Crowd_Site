@@ -1,0 +1,821 @@
+/* Crowd Mobile */
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+body {
+	font: .950em 'Quicksand', sans-serif;
+	color: #d9dadb;
+	list-style: none;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #282b32;
+}
+
+#logo {
+	position: absolute;
+	display: inline-block;
+	top: 23px;
+	left: 50px;
+	-webkit-transition: opacity 0.2s ease;
+	-moz-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+	-o-transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease;
+}
+
+#logo:hover {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.2s ease;
+	-moz-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+	-o-transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease;
+}
+
+#slogan {
+	position: relative;
+	display: inline-block;
+	top: 28px;
+	left: 150px;
+}
+
+.social {
+	display: inline-block;
+	float: right;
+	margin: 25px 50px 0 0;
+}
+
+#facebook {
+	background: transparent url(../img/facebook.png) no-repeat center;
+	padding: 25px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#facebook:hover {
+	background: #d1173c url(../img/facebook.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#twitter {
+	background: transparent url(../img/twitter.png) no-repeat center;
+	padding: 25px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#twitter:hover {
+	background: #d1173c url(../img/twitter.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#googleplus {
+	background: transparent url(../img/googleplus.png) no-repeat center;
+	padding: 25px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#googleplus:hover {
+	background: #d1173c url(../img/googleplus.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#mail {
+	background: transparent url(../img/contact.png) no-repeat center;
+	padding: 25px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#mail:hover {
+	background: #d1173c url(../img/contact.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#map {
+	background: transparent url(../img/map.png) no-repeat center;
+	padding: 25px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#map:hover {
+	background: #d1173c url(../img/map.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+/* BEGIN OF THE SLIDER */
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	overflow: auto;
+	background-color: #359eef;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: white;
+}
+
+.banner ul {
+		list-style: none;
+		width: 300%;
+	}
+
+.banner ul li {
+		display: block;
+		float: left;
+		width: 100%;
+		min-height: 400px;
+
+		-o-background-size: 100% 100%;
+		-ms-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+
+.banner .inner {
+		padding: 160px 0 110px;
+	}
+
+.banner h1, .banner h2 {
+		font-size: 40px;
+		line-height: 52px;
+	}
+
+.banner .dots {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 20px;
+	}
+
+.banner .dots li {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 4px;
+
+			text-indent: -999em;
+
+			border: 2px solid white;
+			border-radius: 6px;
+
+			cursor: pointer;
+			opacity: .4;
+
+			-webkit-transition: background .5s, opacity .5s;
+			-moz-transition: background .5s, opacity .5s;
+			transition: background .5s, opacity .5s;
+		}
+
+.banner .dots li.active {
+				background: #fff;
+				opacity: 1;
+			}
+
+.inner p {
+	margin: 20px 200px;
+}
+
+/* END OF THE SLIDER */
+
+/* Slider Content */
+
+#background1 {
+	background-color: #3399db;
+}
+
+#background2 {
+	background-color: #2dcc70;
+}
+
+#background3 {
+	background-color: #f1c40f;
+}
+
+#background4 {
+	background-color: #e77e23;
+}
+
+/* End of Slider Content */
+
+#brief {
+	padding: 50px;
+	text-align: center;
+	background-color: white;
+	color: #98a6a7;
+}
+
+#brief h1 {
+	font-size: 2em;
+}
+
+#brief h2 {
+	margin-top: 10px;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+section {
+	text-align: center;
+}
+
+section h1 {
+	font-size: 2em;
+	margin-top: 50px;
+}
+
+.box {
+	width: 100%;
+	text-align: center;
+	padding: 150px 0;
+}
+
+.box a {
+	padding: 30px 20px;
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.box h1 {
+	margin-top: 50px;
+	font-size: 3em;
+    color: #000000;
+}
+
+.box p {
+  margin: 30px 150px 80px 150px; 
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #747579;
+}
+
+#mobile {
+	background-color: #e6fbf6;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#mobile:hover {
+    background-color: #30f3c5;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#mobile a {
+	background-color: #e6fbf6;
+	color: #30f3c5;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#mobile a:hover {
+	background-color: #0ed5a6;
+	color: white;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#mobile:hover h1 {
+	color: #25a083;
+	-webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+}
+
+#mobile:hover p {
+	color: white;
+	-webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+}
+
+#web {
+	background-color: #fef9e7;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#web:hover {
+	background-color: #f8d33c;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#web a {
+	background-color: #fef9e7;
+	color: #f8d33c;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#web a:hover {
+	background-color: #f1c40f;
+	color: white;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#web:hover h1 {
+	color: #bea22d;
+	-webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+}
+
+#web:hover p {
+	color: white;
+	-webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+}
+
+
+#socialmedia {	
+	background-color: #eaf5fb;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#socialmedia:hover {
+	background-color: #2b89c6;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#socialmedia a {
+	background-color: #eaf5fb;
+	color: #2b89c6;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#socialmedia a:hover {
+	background-color: #3399db;
+	color: white;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#socialmedia:hover h1 {
+	color: #2570a1;
+	-webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+}
+
+#socialmedia:hover p {
+	color: white;
+	-webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
+}
+
+
+#clients {
+	display: inline-block;
+	margin-top: 50px;
+	width: 950px;
+	height: 150px;
+	border-radius: 15px;
+	background-color: #f4f4f5;
+}
+
+.client-logo {
+	margin: 35px 30px 35px 30px;
+}
+
+#crowdlab {
+	text-align: left;
+	width: 100%;
+	height: 720px;
+	background-color: #1a1c20;
+	margin-top: 100px;
+}
+
+#crowdlab img {
+	position: relative;
+	top: 300px;
+	left: 150px;
+}
+
+#crowdlab-info {
+	width: 500px;
+	height: 300px;
+	position: relative;
+	top: 150px;
+	left: 550px;
+}
+
+#crowdlab-info h1 {
+	margin-bottom: 25px;
+	font-size: 1.8em;
+}
+
+#crowdlab-info p {
+	font-size: 1.3em;
+}
+
+#crowdlab a {
+	padding: 20px 30px;
+    background-color: #2a2c32;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#crowdlab a:hover {
+    background-color: #d1173c;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	height: 400px;
+	background-color: #444a59;
+}
+
+footer img {
+	margin: 70px 0 5px 0;
+}
+
+footer h1 {
+	margin: 0 0 50px 0;
+}
+
+#social-mini {
+	margin: 50px 0 70px 0;
+}
+
+footer p {
+	font-size: 1.5em;
+	margin: 10px 0 20px 0;
+    font-weight: 700;
+    color: #30343e;
+}
+
+#crowd-contact {
+	margin: 30px 0 0 0;
+}
+
+footer a {
+	color: white;
+	font-size: 1.2em;
+	font-weight: 700;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+footer a:hover {
+	background-color: #333742;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#map-img {
+	border: 10px solid white;
+	border-radius: 30px;
+	margin: 150px 0 0 150px;
+}
+
+#map-img:hover {
+	border: 10px solid #333742;
+}
+
+#facebook-mini {
+	background: transparent url(../img/facebook.png) no-repeat center;
+	border-radius: 30px;
+	padding: 20px 30px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#facebook-mini:hover {
+	background: #333742 url(../img/facebook.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#twitter-mini {
+	background: transparent url(../img/twitter.png) no-repeat center;
+	border-radius: 30px;
+	margin-left: 20px;
+	padding: 20px 30px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#twitter-mini:hover {
+	background: #333742 url(../img/twitter.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#googleplus-mini {
+	background: transparent url(../img/googleplus.png) no-repeat center;
+	border-radius: 30px;
+	margin-left: 20px;
+	padding: 20px 30px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#googleplus-mini:hover {
+	background: #333742 url(../img/googleplus.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#map-mini {
+	background: transparent url(../img/map.png) no-repeat center;
+	border-radius: 30px;
+	margin-left: 20px;
+	padding: 20px 30px;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#map-mini:hover {
+	background: #333742 url(../img/map.png) no-repeat center;
+	-webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#copyright {
+	padding: 20px;
+	background-color: #393e4a;
+	text-align: center;
+}
+
+small {
+	color: #2a2d36;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+.go-top {
+    position: fixed;
+    padding: 15px;
+    bottom: 3em;
+    right: 3em;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: none;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+.go-top:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+@media screen and (max-width: 768px) {
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #282b32;
+}
+
+.banner {
+	display: none;
+}
+
+.social {
+	display: none;
+}
+
+#brief {
+	background-color: #d1173c;
+	color: white;
+}
+
+#brief h1 {
+	margin-bottom: 15px;
+}
+
+#mobile {
+	background-color: #30f3c5;
+	padding: 25px 0;
+}
+
+#mobile h1 {
+    color: white;	
+    margin-top: 10px;
+}
+
+#mobile p {
+	margin: 20px 20px 10px;
+	font-size: 1em;
+	color: white;
+}
+
+#mobile a {
+	display: none;
+}
+
+#mobile img {
+	width: 180px;
+	height: 151px;
+}
+
+#web {
+	padding: 25px 0;
+	background-color: #f8d33c;
+}
+
+#web h1 {
+    color: white;	
+    margin-top: 10px;
+    font-size: 1.9em;
+}
+
+#web p {
+	margin: 20px 20px 10px;
+	font-size: 1em;
+	color: white;
+}
+#web a {
+	display: none;
+}
+
+#web img {
+	width: 300px;
+	height: 193px;
+}
+
+#socialmedia {
+	background-color: #2b89c6;
+	padding: 25px 0;
+}
+
+#socialmedia h1 {
+    color: white;	
+    margin-top: 10px;
+}
+
+#socialmedia p {
+	margin: 20px 20px 10px;
+	font-size: 1em;
+	color: white;
+}
+
+#socialmedia a {
+	display: none;
+}
+
+#socialmedia img {
+	width: 180px;
+	height: 149px;
+}
+
+#mobile:hover {
+	display: none;
+}
+
+#web:hover {
+	display: none;
+}
+
+#socialmedia:hover {
+	display: none;
+}
+
+#crowdlab {
+	display: none;
+}
+
+#clients {
+	background-color: white;
+	height: 600px;
+	text-align: center;
+}
+
+#clients img {
+	display: block;
+	float: none;
+}
+
+.go-top {
+	visibility: hidden;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+
+
+
+
