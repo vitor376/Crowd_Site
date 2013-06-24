@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+﻿<!DOCTYPE html>
+<html lang="pt">
 	<head>
 		<meta charset="utf-8"/>
 		<title> Crowd - Mobile, Web e Social Media</title>
@@ -10,7 +10,7 @@
         <meta name="keywords" content="..."/>
         <meta name="viewport" content="width=device-width">
         <meta name="og:url" content="http://crowdmobile.com.br"/>
-        <meta name="og:title" content="Crowd - Sua presença Mobile"/>
+        <meta name="og:title" content="Crowd - Sua presença digital"/>
         <meta name="og:site_name" content="Crowd Mobile"/>
         <meta name="og:type" content="website"/>
         <meta name="og:description" content="..."/>
@@ -18,117 +18,272 @@
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/crowd.css">
+    <link rel="stylesheet" href="css/flexslider.css">
 		<link rel="icon" type="image/png" href="favicon.png">
-
-		<script src="js/jQuery.js" type="text/javascript"></script>
-        <script src="js/modernizr.js" type="text/javascript"></script>
-        <script src="js/crowd.js" type="text/javascript"></script>
-        <script src="js/go-top.js" type="text/javascript"></script>
-        <script src="js/unslider.js" type="text/javascript"></script>
-        <script src="js/start-slider.js" type="text/javascript"></script>
         
 	</head>
 	<body>
 		<header>
-	      	<a id="logo" href=""><img src="img/logo.png" alt="Crowd Logo"></a>
-	      	<h1 id="slogan">Sua presença Mobile.</h1>
-	      	<div class="social">
-		      	<a id="facebook" href="http://www.facebook.com/CrowdMobile" target="_blank"></a>
-	            <a id="twitter" href="http://twitter.com/crowd_mobile" target="_blank"></a>
-	            <a id="googleplus" href="http://plus.google.com/u/0/113433334053187770501" target="_blank"></a>
-	            <a id="mail" href="mailto:crowd@crowdmobile.com.br"></a>
-	            <a id="map" href="#" target="_blank"></a>
-	      	</div>
+		  <a class="logo fadeIn" href=""></a>
+		  <p>Sua presença Mobile.</p>
+		     <nav>
+            <a class="facebook" href="http://www.facebook.com/CrowdMobile"></a>
+            <a class="twitter" href="http://twitter.com/crowd_mobile"></a>
+            <a class="googleplus" href="http://plus.google.com/113433334053187770501"></a>
+            <a class="mail" href="mailto:crowd@crowdmobile.com.br"></a>
+            <a class="map" href="#"></a>
+		     </nav>
 	    </header>
-	    <div class="banner">
-		    <ul>
-			<li id="background1">
-				<div class="inner">
-					<h1>Título do Aplicativo</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nisi, tempor nec lobortis sed, luctus eu erat.</p>
-				</div>
-			</li>
-			<li id="background2">
-				<div class="inner">
-					<h1>Título do Aplicativo</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nisi, tempor nec lobortis sed, luctus eu erat.</p>
-				</div>
-			</li>
-        	<li id="background3">
-				<div class="inner">
-					<h1>Título do Aplicativo</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nisi, tempor nec lobortis sed, luctus eu erat.</p>
-				</div>
-			</li>
-		    <li id="background4">
-				<div class="inner">
-					<h1>Título do Aplicativo</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nisi, tempor nec lobortis sed, luctus eu erat.</p>
-			    </div>
-			</li>
-			</ul>
-		</div>
-		<div id="brief">
-			<h1>Lorem ipsum dolor sit amet</h1>
-			<h2>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</h2>
-		</div>
-		<section>
-			<div id="mobile" class="box"> 
-            <img src="img/mobile.png" alt="Android, iOS e Windows Phone">
-            <h1>Mobile Apps</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis adipiscing dolor pulvinar venenatis. Vivamus eget arcu eget erat adipiscing suscipit. Vestibulum auctor imperdiet libero at aliquet. Phasellus eleifend lacus nulla, a hendrerit lorem. Proin leo mauris, suscipit id egestas vitae, mattis quis ipsum.</p>
-            <a href="#">Lorem ipsum dolor sit amet</a>
-		    </div>
-		    <div id="web" class="box">
-            <img src="img/web.png" alt="Desenvolvimento Web">
-            <h1>Desenvolvimento Web</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis adipiscing dolor pulvinar venenatis. Vivamus eget arcu eget erat adipiscing suscipit. Vestibulum auctor imperdiet libero at aliquet. Phasellus eleifend lacus nulla, a hendrerit lorem. Proin leo mauris, suscipit id egestas vitae, mattis quis ipsum.</p>
-            <a href="#">Lorem ipsum dolor sit amet</a>
-		    </div>
-		    <div id="socialmedia" class="box">
-            <img src="img/socialmedia.png" alt="Twitter e Facebook">
-            <h1>Social Media</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis adipiscing dolor pulvinar venenatis. Vivamus eget arcu eget erat adipiscing suscipit. Vestibulum auctor imperdiet libero at aliquet. Phasellus eleifend lacus nulla, a hendrerit lorem. Proin leo mauris, suscipit id egestas vitae, mattis quis ipsum.</p>
-            <a href="#">Lorem ipsum dolor sit amet</a>
-		    </div>
-		</section>
-		<section>
-		<h1>Nossos Clientes</h1>
-		<div id="clients">
-			<img class="client-logo" src="img/clients/ink.png" alt="www.ink.com.br">
-			<img class="client-logo" src="img/clients/furnas.png" alt="www.furnas.com.br">
-			<img class="client-logo" src="img/clients/demiglace.png" alt="www.demiglace.com.br">
-			<img class="client-logo" src="img/clients/riosport.png" alt="www.riosport.com.br">
-			<img class="client-logo" src="img/clients/carioca.png" alt="www.cariocashopping.com.br">
-		</div>
-		</section>
-		<section id="crowdlab">
-			<img src="img/crowdlab-logo.png" alt="www.crowdlab.com.br">
-			<div id="crowdlab-info">
-			<h1>Lorem ipsum dolor sit amet</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<a href="#">Lorem ipsum dolor</a>
-			</div>
-		</section>
-		<footer>
-			<img src="img/logo-neg.png" alt="Crowd - Sua presença Mobile">
-			<h1>Sua presença Mobile.</h1>
-            <div class="social-mini">
-		      	<a id="facebook-mini" href="http://www.facebook.com/CrowdMobile" target="_blank"></a>
-	            <a id="twitter-mini" href="http://twitter.com/crowd_mobile" target="_blank"></a>
-	            <a id="googleplus-mini" href="http://plus.google.com/u/0/113433334053187770501" target="_blank"></a>
-	            <a id="map-mini" href="#" target="_blank"></a>
-	      	</div>
-	      	 <div id="crowd-contact">​
-              <p>+55 (21) 3518-7824</p>
-              <a href="mailto:crowd@crowdmobile.com.br">crowd@crowdmobile.com.br</a>
-            </div>
-		</footer>
-		<div id="copyright">
-			<small>© Crowd Mobile 2013 - Todos os direitos reservados</small>
-			<a class="go-top" href="">Voltar ao topo</a>
-		</div>
+
+        <!-- SLIDER -->
+
+          <div class="flexslider">
+            <ul class="slides">
+              <li id="sameway">
+                <div class="preview">
+                <p class="about">Uma nova rede social. Caronas compartilhadas a qualquer hora.</p>
+                <p class="divisor">Em breve</p>
+                <img class="disabled" src="img/slider/appstore-white.png">
+              </div>
+              </li>
+              <li id="vira">
+                <div class="preview">
+                <p class="about">Um drinking game sempre com você.</p>
+                <p class="divisor">Baixe agora!</p>
+                <a href="http://itunes.apple.com/us/app/vira/id589867342?mt=8"><img src="img/slider/appstore-white.png"></a>
+              </div>
+              </li>
+              <li id="doforno">
+                <div class="preview">
+                <p class="about">Você escolhe a padaria, o pão e o dia. Nós avisamos quando ele estiver saindo do forno.</p>
+                <p class="divisor">Em breve</p>
+                <img class="disabled" src="img/slider/appstore-white.png">
+              </div>
+              </li>
+              <li id="furnas">
+                <div class="preview">
+                <p class="about">Projeto do Cariocão 2013 para acompanhar seu time e lance a lance, em tempo real, dos jogos.</p>
+                <a href="http://itunes.apple.com/br/app/furnas-cariocao-2013/id596730582?mt=8"><img src="img/slider/appstore-furnas.png"></a>
+              </div>
+              </li>
+                <li id="gnc">
+                <div class="client-fix">
+                <p>Disponível para iOS e Android</p>
+                <p class="about">Líder mundial em varejo de produtos nutricionais chega ao Brasil com uma ferramenta para estar mais perto do seu público.</p>
+                <a href="http://itunes.apple.com/br/app/gnc/id602300261?mt=8"><img src="img/slider/appstore-gnc.png"></a>
+                <a href="http://bit.ly/12lv3DJ"><img src="img/slider/googleplayneg.png"></a>
+              </div>
+              </li>
+              <li id="kloro">
+                <div class="preview">
+                <p class="about">Descubra novas cores e guarde tudo num só lugar.</p>
+                <p class="divisor">Em breve</p>
+                <img class="disabled" src="img/slider/appstore-white.png">
+                <img class="disabled" src="img/slider/google-play.png">
+              </div>
+              </li>
+                <li id="pdg">
+                <div class="preview-client">
+                <p>Desenvolvemos e lançamos.</p>
+                <p class="about">Aplicativo iOS e Android para Lançamento imobiliário.</p>
+                <a href="http://itunes.apple.com/br/app/marino-residencial/id644679846?mt=8"><img src="img/slider/appstore-white.png"></a>
+                <a href="http://bit.ly/19waPxq"><img src="img/slider/google-play.png"></a>
+              </div>
+              </li>
+              <li id="appmidia">
+                <div class="preview">
+                <p class="about">O organograma de todas agências e maiores clientes do Brasil. O mercado publicitário mapeado.</p>
+                <a href="http://itunes.apple.com/hk/app/appmidia/id600577934?mt=8"><img src="img/slider/appstore-white.png"></a>
+              </div>
+              </li>
+                <li id="sergiocastro">
+                <div class="client-fix">
+                <p>Desenvolvemos e lançamos.</p>
+                <p class="about">Todos os pontos da maior imobiliária do Rio, com serviços de consulta de alvará e dicas do mercado, no seu iPhone ou Android.</p>
+                <a href="http://itunes.apple.com/br/app/sergiocastro/id567867189?mt=8"><img src="img/slider/appstore.png"></a>
+                <a href="http://bit.ly/14TBdAt"><img src="img/slider/googleplayneg.png"></a>
+              </div>
+              </li>
+                <li id="rica">
+                <div class="preview-client">
+                <p>Disponível para iOS e Android</p>
+                <p class="about">O primeiro jornalista a criar um blog, também é o primeiro a ter um app.</p>
+                <a href="http://itunes.apple.com/br/app/rica-perrone/id622628483?mt=8"><img src="img/slider/appstore-white.png"></a>
+                <a href="http://bit.ly/177nCWo"><img src="img/slider/google-play.png"></a>
+              </div>
+              </li>
+              <li id="meusonze">
+                <div class="preview">
+                <p class="about">A paixão nacional fica ainda mais divertida.</p>
+                <p class="divisor">Em breve</p>
+                <img class="disabled" src="img/slider/appstore-white.png">
+              </div>
+              </li>
+            </ul>
+          </div>
+        
+         <!-- END OF THE SLIDER -->
+
+        <section class="main">
+           <h1>A Crowd investe em presença digital.<br>Exploramos o seu público de forma qualificada e positiva.</h1>
+           <a class="next" href="#mobile"></a>
+        </section>
+        <section>
+        	<div class="info" id="mobile">
+              <img src="img/mobile.png" alt="Dispositivos Mobile">
+              <h2>Mobile Apps</h2>
+              <p>A presença mobile é a verdadeira comunicação entre marca e público. Um canal para falar e ouvir seu cliente. Apps podem trazer a conveniência, prestação de serviço ou entretenimento para seu cliente. A Crowd oferece o pensamento e o desenvolvimento mobile, a partir do seu projeto, ideia ou demanda.</p>
+              <a class="button" href="mailto:crowd@crowdmobile.com.br">Quero soluções Mobile</a>
+              <a class="next" href="#web"></a>
+        	</div>
+        	<div class="info" id="web">
+              <img src="img/web.png" alt="Websites e Web-apps">
+              <h2>Desenvolvimento Web</h2>
+              <p>Desenvolvemos soluções para web como sites institucionais, aplicativos para facebook, hotsites, portais, sites mobile e sistemas. Desenvolvemos soluções para web como sites institucionais, aplicativos para facebook, hotsites, portais, sites mobile e sistemas.</p>
+              <a class="button" href="mailto:crowd@crowdmobile.com.br">Quero soluções Web</a>
+              <a class="next" href="#socialmedia"></a>
+        	</div>
+        	<div class="info" id="socialmedia">
+              <img src="img/socialmedia.png" alt="Fanpages de Facebook e Twitter">
+              <h2>Social Media</h2>
+              <p>As redes sociais permitem um contato muito qualificado com seu público. Cuidamos do monitoramento e gerenciamos de conteúdo para página, criando uma audiência própria. Com planejamento, atingimos a segmentação correta da marca e potencializamos a capacidade viral, para otimizar os resultados no alcance e na conversão de novos clientes.</p>
+              <a class="button" href="mailto:crowd@crowdmobile.com.br">Quero soluções em Redes Sociais</a>
+              <a class="next" href="#clients"></a>
+        	</div>
+        </section>
+        <section class="clients" id="clients">
+              <h3>Algumas marcas que confiam em nós</h3>
+              <a href="http://itunes.apple.com/br/app/furnas-cariocao-2013/id596730582?mt=8" target="_blank"><img src="img/clients/furnas.png" alt="Furnas Eletrobrás é um cliente Crowd."></a>
+              <a href="http://itunes.apple.com/br/app/gnc/id602300261?mt=8" target="_blank"><img src="img/clients/gnc.png" alt="GNC é um cliente Crowd."></a>
+              <a href="http://itunes.apple.com/br/app/carioca-shopping/id584994212?mt=8" target="_blank"><img src="img/clients/carioca.png" alt="Carioca Shopping é um cliente Crowd."></a>
+              <a href="http://itunes.apple.com/br/app/marino-residencial/id644679846?mt=8" target="_blank"><img src="img/clients/pdg.png" alt="PDG é um cliente Crowd."></a>
+              <a href="http://itunes.apple.com/us/app/ink-engenharia/id570003091?mt=8" target="_blank"><img src="img/clients/ink.png" alt="Ink Engenharia é um cliente Crowd."></a>
+              <a href="http://itunes.apple.com/us/app/sergio-castro-internacional/id584563903?mt=8" target="_blank"><img src="img/clients/sergiocastro.png" alt="Sergio Castro Imóveis é um cliente Crowd."></a>
+              <a href="http://www.riosportcenter.com.br" target="_blank"><img src="img/clients/riosport.png" alt="Rio Sport Center é um cliente Crowd."></a>
+              <a href="http://itunes.apple.com/vg/app/demi-glace/id551155567?mt=8" target="_blank"><img src="img/clients/demiglace.png" alt="Restaurante Demiglace é um cliente Crowd."></a>
+              <a class="next" href="#crowdlab"></a>
+        </section>
+        <section id="crowdlab" class="crowdlab">
+           <img src="img/crowdlab-logo.png" alt="Laboratório de ideias Crowd">
+           <h3>A Crowd lab é um espaço para transformar suas ideias em realidade.</h3>
+           <p>Tem uma grande ideia para um aplicativo Web ou Mobile mas não sabe por onde começar? A Crowd Lab pode te ajudar. Entre em contato conosco e vamos tirar essa ideia do papel.</p>
+           <a class="idea" href="#">Tenho uma grande ideia!</a>
+           <a class="next" href="#contact"></a>
+        </section>
+        <footer>
+          <img id="contact" src="img/logo-footer.png" alt="Crowd - Sua presença Mobile.">
+          <h3>Sua presença digital.</h3>
+          <ul>
+            <li><a class="f-footer" href="http://www.facebook.com/CrowdMobile"></a></li>
+            <li><a class="t-footer" href="http://twitter.com/crowd_mobile"></a></li>
+            <li><a class="g-footer" href="http://plus.google.com/113433334053187770501"></a></li>
+            <li><a class="m-footer" href="#"></a></li>
+            <p>+55 (21) 3518-7824</p>
+            <a class="fmail" href="mailto:crowd@crowdmobile.com.br">crowd@crowdmobile.com.br</a>
+          </ul>
+           <a class="go-top" href="#">ir ao topo</a>
+        </footer>
+          <div class="copyright">
+            <small>© Crowd Mobile 2013 - Todos os direitos reservados</small>
+          </div>
+
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/preloadCssImages.js"></script>
+
+    <!-- Flexslider -->
+      <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            slideshow: true,
+            animation: "slide", 
+            animationLoop: true,               
+            slideshowSpeed: 4000, 
+            animationSpeed: 600,
+            easing: "swing",
+            controlNav: false
+          }
+            );
+            });
+      </script>
+
+    <!-- Sticky to-top Button -->
+    <script type="text/javascript">
+
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+    </script>
+    
+   <!-- Easy Scrolling -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+              function filterPath(string) {
+              return string
+                .replace(/^\//,'')
+                .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+                .replace(/\/$/,'');
+              }
+              var locationPath = filterPath(location.pathname);
+              var scrollElem = scrollableElement('html', 'body');
+             
+              $('a[href*=#]').each(function() {
+                var thisPath = filterPath(this.pathname) || locationPath;
+                if (  locationPath == thisPath
+                && (location.hostname == this.hostname || !this.hostname)
+                && this.hash.replace(/#/,'') ) {
+                  var $target = $(this.hash), target = this.hash;
+                  if (target) {
+                    var targetOffset = $target.offset().top;
+                    $(this).click(function(event) {
+                      event.preventDefault();
+                      $(scrollElem).animate({scrollTop: targetOffset}, 900, function() {
+                        location.hash = '';
+                      });
+                    });
+                  }
+                }
+              });
+             
+              // use the first element that is "scrollable"
+              function scrollableElement(els) {
+                for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+                  var el = arguments[i],
+                      $scrollElement = $(el);
+                  if ($scrollElement.scrollTop()> 0) {
+                    return el;
+                  } else {
+                    $scrollElement.scrollTop(1);
+                    var isScrollable = $scrollElement.scrollTop()> 0;
+                    $scrollElement.scrollTop(0);
+                    if (isScrollable) {
+                      return el;
+                    }
+                  }
+                }
+                return [];
+              }
+             
+            });
+    </script>
 	</body>
 </html>
