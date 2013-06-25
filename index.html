@@ -23,6 +23,104 @@
 		<link rel="stylesheet" href="css/crowd.css">
     <link rel="stylesheet" href="css/flexslider.css">
 		<link rel="icon" type="image/png" href="favicon.png">
+                
+                
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/preloadCssImages.js"></script>
+
+    <!-- Flexslider -->
+      <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            slideshow: true,
+            animation: "slide", 
+            touche: true,
+            animationLoop: true,               
+            slideshowSpeed: 4000, 
+            animationSpeed: 600,
+            easing: "swing",
+            controlNav: false
+          }
+            );
+            });
+      </script>
+
+    <!-- Sticky to-top Button -->
+    <script type="text/javascript">
+
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+    </script>
+    
+   <!-- Easy Scrolling -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+              function filterPath(string) {
+              return string
+                .replace(/^\//,'')
+                .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+                .replace(/\/$/,'');
+              }
+              var locationPath = filterPath(location.pathname);
+              var scrollElem = scrollableElement('html', 'body');
+             
+              $('a[href*=#]').each(function() {
+                var thisPath = filterPath(this.pathname) || locationPath;
+                if (  locationPath == thisPath
+                && (location.hostname == this.hostname || !this.hostname)
+                && this.hash.replace(/#/,'') ) {
+                  var $target = $(this.hash), target = this.hash;
+                  if (target) {
+                    var targetOffset = $target.offset().top;
+                    $(this).click(function(event) {
+                      event.preventDefault();
+                      $(scrollElem).animate({scrollTop: targetOffset}, 900, function() {
+                        location.hash = '';
+                      });
+                    });
+                  }
+                }
+              });
+             
+              // use the first element that is "scrollable"
+              function scrollableElement(els) {
+                for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+                  var el = arguments[i],
+                      $scrollElement = $(el);
+                  if ($scrollElement.scrollTop()> 0) {
+                    return el;
+                  } else {
+                    $scrollElement.scrollTop(1);
+                    var isScrollable = $scrollElement.scrollTop()> 0;
+                    $scrollElement.scrollTop(0);
+                    if (isScrollable) {
+                      return el;
+                    }
+                  }
+                }
+                return [];
+              }
+             
+            });
+    </script>
         
 	</head>
 	<body>
@@ -129,14 +227,14 @@
 
         <section class="main">
            <h1>A Crowd investe em presença digital.<br>Exploramos o seu público de forma qualificada e positiva.</h1>
-           <a class="next" href="#about"></a>
+           <a class="next" href="#mobile"></a>
         </section>
-        <section id="about">
+        <section>
         	<div class="info" id="mobile">
               <img src="img/mobile.png" alt="Dispositivos Mobile">
               <h2>Mobile Apps</h2>
               <p>A presença mobile é a verdadeira comunicação entre marca e público. Um canal para falar e ouvir seu cliente. Apps podem trazer a conveniência, prestação de serviço ou entretenimento para seu cliente. A Crowd oferece o pensamento e o desenvolvimento mobile, a partir do seu projeto, ideia ou demanda.</p>
-              <a class="button mobile" href="mailto:crowd@crowdmobile.com.br">Quero soluções Mobile</a>
+              <a class="button" href="mailto:crowd@crowdmobile.com.br">Quero soluções Mobile</a>
               <a class="next" href="#web"></a>
         	</div>
         	<div class="info" id="web">
@@ -151,11 +249,11 @@
               <h2>Social Media</h2>
               <p>As redes sociais permitem um contato muito qualificado com seu público. Cuidamos do monitoramento e gerenciamos de conteúdo para página, criando uma audiência própria. Com planejamento, atingimos a segmentação correta da marca e potencializamos a capacidade viral, para otimizar os resultados no alcance e na conversão de novos clientes.</p>
               <a class="button" href="mailto:crowd@crowdmobile.com.br">Quero soluções em Redes Sociais</a>
-              <a class="next" href="#clients"></a>
+              <a class="next" href="#land"></a>
         	</div>
         </section>
         <section class="clients" id="clients">
-              <h3>Algumas marcas que confiam em nós</h3>
+              <h3 id="land">Algumas marcas que confiam em nós</h3>
               <a href="http://itunes.apple.com/br/app/furnas-cariocao-2013/id596730582?mt=8" target="_blank"><img src="img/clients/furnas.png" alt="Furnas Eletrobrás é um cliente Crowd."></a>
               <a href="http://itunes.apple.com/br/app/gnc/id602300261?mt=8" target="_blank"><img src="img/clients/gnc.png" alt="GNC é um cliente Crowd."></a>
               <a href="http://itunes.apple.com/br/app/carioca-shopping/id584994212?mt=8" target="_blank"><img src="img/clients/carioca.png" alt="Carioca Shopping é um cliente Crowd."></a>
@@ -164,14 +262,14 @@
               <a href="http://itunes.apple.com/us/app/sergio-castro-internacional/id584563903?mt=8" target="_blank"><img src="img/clients/sergiocastro.png" alt="Sergio Castro Imóveis é um cliente Crowd."></a>
               <a href="http://www.riosportcenter.com.br" target="_blank"><img src="img/clients/riosport.png" alt="Rio Sport Center é um cliente Crowd."></a>
               <a href="http://itunes.apple.com/vg/app/demi-glace/id551155567?mt=8" target="_blank"><img src="img/clients/demiglace.png" alt="Restaurante Demiglace é um cliente Crowd."></a>
-              <a class="next" href="#crowdlab"></a>
+              <a class="next" href="#land2"></a>
         </section>
         <section id="crowdlab" class="crowdlab">
-           <img src="img/crowdlab-logo.png" alt="Laboratório de ideias Crowd">
+           <img id="land2" src="img/crowdlab-logo.png" alt="Laboratório de ideias Crowd">
            <h3>A Crowd lab é um espaço para transformar suas ideias em realidade.</h3>
            <p>Tem uma grande ideia para um aplicativo Web ou Mobile mas não sabe por onde começar? A Crowd Lab pode te ajudar. Entre em contato conosco e vamos tirar essa ideia do papel.</p>
            <a class="idea" href="#">Tenho uma grande ideia!</a>
-           <a class="next" href="#contact"></a>
+           <a class="next" href="#landfinal"></a>
         </section>
         <footer>
           <img id="contact" src="img/logo-footer.png" alt="Crowd - Sua presença Mobile.">
@@ -187,103 +285,9 @@
            <a class="go-top" href="#">ir ao topo</a>
         </footer>
           <div class="copyright">
-            <small>© Crowd Mobile 2013 - Todos os direitos reservados</small>
+            <small id="landfinal">© Crowd Mobile 2013 - Todos os direitos reservados</small>
           </div>
 
-    <!-- Javascript -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/preloadCssImages.js"></script>
 
-    <!-- Flexslider -->
-      <script type="text/javascript" charset="utf-8">
-        $(window).load(function() {
-          $('.flexslider').flexslider({
-            slideshow: true,
-            animation: "slide", 
-            animationLoop: true,               
-            slideshowSpeed: 4000, 
-            animationSpeed: 600,
-            easing: "swing",
-            controlNav: false
-          }
-            );
-            });
-      </script>
-
-    <!-- Sticky to-top Button -->
-    <script type="text/javascript">
-
-		$(document).ready(function() {
-			// Show or hide the sticky footer button
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 200) {
-					$('.go-top').fadeIn(200);
-				} else {
-					$('.go-top').fadeOut(200);
-				}
-			});
-			
-			// Animate the scroll to top
-			$('.go-top').click(function(event) {
-				event.preventDefault();
-				
-				$('html, body').animate({scrollTop: 0}, 300);
-			})
-		});
-    </script>
-    
-   <!-- Easy Scrolling -->
-    <script type="text/javascript">
-      $(document).ready(function() {
-              function filterPath(string) {
-              return string
-                .replace(/^\//,'')
-                .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-                .replace(/\/$/,'');
-              }
-              var locationPath = filterPath(location.pathname);
-              var scrollElem = scrollableElement('html', 'body');
-             
-              $('a[href*=#]').each(function() {
-                var thisPath = filterPath(this.pathname) || locationPath;
-                if (  locationPath == thisPath
-                && (location.hostname == this.hostname || !this.hostname)
-                && this.hash.replace(/#/,'') ) {
-                  var $target = $(this.hash), target = this.hash;
-                  if (target) {
-                    var targetOffset = $target.offset().top;
-                    $(this).click(function(event) {
-                      event.preventDefault();
-                      $(scrollElem).animate({scrollTop: targetOffset}, 900, function() {
-                        location.hash = '';
-                      });
-                    });
-                  }
-                }
-              });
-             
-              // use the first element that is "scrollable"
-              function scrollableElement(els) {
-                for (var i = 0, argLength = arguments.length; i <argLength; i++) {
-                  var el = arguments[i],
-                      $scrollElement = $(el);
-                  if ($scrollElement.scrollTop()> 0) {
-                    return el;
-                  } else {
-                    $scrollElement.scrollTop(1);
-                    var isScrollable = $scrollElement.scrollTop()> 0;
-                    $scrollElement.scrollTop(0);
-                    if (isScrollable) {
-                      return el;
-                    }
-                  }
-                }
-                return [];
-              }
-             
-            });
-    </script>
 	</body>
 </html>

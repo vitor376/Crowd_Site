@@ -188,7 +188,7 @@ section {
 
 .client-fix {
 	position: relative;
-	left: 325px;
+	left: 380px;
 	top: 180px;
 	width: 500px;
 	text-align: center;
@@ -196,7 +196,7 @@ section {
 
 .preview-client {
 	position: relative;
-	left: 325px;
+	left: 380px;
 	top: 220px;
 	width: 500px;
 	text-align: center;
@@ -206,7 +206,7 @@ section {
 	position: relative;
 	text-align: center;
 	top: 160px;
-	left: 620px;
+	left: 680px;
 	width: 350px;
 }
 
@@ -227,6 +227,10 @@ section {
 	padding: 15px 30px;
 	border-radius: 30px;
 	background-color: black;
+}
+
+.slides a:hover {
+	opacity: .7;
 }
 
 .title {
@@ -299,11 +303,11 @@ section {
 /* END OF SLIDER */
 
 .main {
-	padding: 30px;
+	padding: 50px;
 }
 
 .main h1, .main h2 {
-	font-size: 1.1em;
+	font-size: 1.5em;
 	margin: 0 0 15px;
 	color: #c0c2c4;
 }
@@ -331,8 +335,7 @@ section {
 }
 
 .info {
-	width: 100%;
-	padding: 90px;
+	padding: 120px;
 	color: white;
 }
 
@@ -345,14 +348,15 @@ section {
 	background-color: #1bbc9b;
 }
 
-.mobile {
+#mobile .button{
 	background-color: #169379;
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.mobile:hover{
+
+#mobile .button:hover{
 	color: #1bbc9b;
 	background-color: white;
 	-webkit-transition: all 0.5s ease-in-out;
@@ -599,13 +603,14 @@ footer li {
 }
 
 
+
 /* iPad & Tablets */
 
 @media screen and (max-width: 768px) {
 
 .client-fix {
 	position: relative;
-	left: 100px;
+	left: 120px;
 	top: 180px;
 	width: 500px;
 	text-align: center;
@@ -613,7 +618,7 @@ footer li {
 
 .preview-client {
 	position: relative;
-	left: 100px;
+	left: 120px;
 	top: 220px;
 	width: 500px;
 	text-align: center;
@@ -622,13 +627,18 @@ footer li {
 .preview {
 	position: relative;
 	text-align: right;
-	top: 160px;
-	left: 330px;
+	top: 180px;
+	left: 390px;
 	width: 320px;
+	font-size: .900em;
+}
+
+.flex-direction-nav {
+	display: none;
 }
 
 .info p {
-	margin: 0 80px 60px 80px;
+	margin: 0 30px 60px 30px;
 	text-align: justify;
 }
 
@@ -639,6 +649,19 @@ footer li {
 .crowdlab h3 {
 	margin: 20px 0;
 	font-size: 1.3em;
+}
+
+.next {
+	display: none;
+	visibility: hidden;
+}
+
+#kloro {
+	display: none;
+}
+
+.go-top {
+	visibility: hidden;
 }
 
 .crowdlab {
@@ -668,8 +691,8 @@ nav {
 }
 
 .main {
-	padding: 30px 5px;
-	font-size: .800em;
+	padding: 30px 15px;
+	font-size: .700em;
 }
 
 .main h1, .main h2 {
@@ -680,7 +703,7 @@ nav {
 	display: none;
 }
 
-#about {
+.info {
 	display: none;
 }
 
@@ -689,7 +712,8 @@ nav {
 }
 
 .clients {
-	padding: 100px 0;
+	padding: 100px 60px;
+	font-size: .800em;
 }
 
 #crowdlab {
